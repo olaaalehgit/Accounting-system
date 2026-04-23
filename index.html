@@ -1,528 +1,463 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modern Expert | خبراء العصر الحديث</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Modern Expert</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        :root {
+            --main-purple: #6f42c1;
+            --dark-blue: #0d3a5e;
+            --light-bg: #f7f6fb;
+        }
+        /* ===== HERO SECTION ===== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            background: linear-gradient(rgba(13, 58, 94, 0.85), rgba(13, 58, 94, 0.85)), 
+                        url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d") center/cover no-repeat;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+        }
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+        .top-header {
+            font-size: 14px;
+        }
 
-<body>
-    <section class="hero">
+        .navbar-brand {
+            font-size: 24px;
+            color: #fff !important;
+        }
 
-        <!-- ===== TOP HEADER ===== -->
-        <div class="top-header py-2">
-            <div class="container">
-                <div class="d-flex justify-content-between align-items-center">
+        .nav-link {
+            color: #fff !important;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+
+  
+
+        .hero-content {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            padding-top: 50px;
+        }
+
+        .hero h1 {
+            font-size: clamp(30px, 5vw, 48px);
+            font-weight: 800;
+            line-height: 1.4;
+        }
+
+        /* ===== BUTTONS ===== */
+        .btn-main {
+            background: var(--main-purple);
+            color: #fff;
+            border-radius: 30px;
+            padding: 12px 35px;
+            border: none;
+            transition: 0.3s;
+        }
+
+        .btn-main:hover {
+            background: #5a32a3;
+            color: white;
+        }
+
+        .btn-outline-custom {
+            border: 2px solid #fff;
+            color: #fff;
+            border-radius: 30px;
+            padding: 12px 35px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-outline-custom:hover {
+            background: #fff;
+            color: var(--dark-blue);
+        }
+
+
+
+
+        
+.about-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.stats-section {
+  background: #f7f6fb;
+  /* نفس لون Figma */
+}
+
+.stats-number {
+  color: #6f42c1;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.stats-text {
+  color: #0d3a5e;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.stat-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f4e79;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #6c757d;
+  margin-top: 6px;
+}
+
+
+
+
+.why-us-section {
+  background: #5b3a8e;
+  /* بنفسجي مطابق */
+}
+
+.why-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  transition: .3s;
+}
+
+.why-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+}
+
+.icon-box {
+  width: 55px;
+  height: 55px;
+  background: #f1ecfa;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  color: #6f42c1;
+  font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.text-purple {
+  color: #6f42c1;
+}
+
+.services-section {
+  background: #fff;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .05);
+  transition: all .3s ease;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.8;
+  margin-top: 10px;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .08);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  background: #f2ecfb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  color: #6f42c1;
+  font-size: 24px;
+}
+
+
+
+
+
+
+.contact-section {
+  background: #f7f6fb;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #0d3a5e;
+  font-size: 15px;
+}
+
+.contact-info i {
+  color: #6f42c1;
+  font-size: 18px;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.contact-form .form-control {
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.contact-form .form-control:focus {
+  border-color: #6f42c1;
+  box-shadow: 0 0 0 .2rem rgba(111, 66, 193, .15);
+}
+    </style>
+    </head>
+    <body>
+
+        <header class="hero">
+            <div class="top-header py-2 d-none d-md-block">
+                <div class="container-fluid d-flex justify-content-between">
                     <div>
-                        <i class="bi bi-telephone"></i> 0123456789
-                        <span class="mx-3">|</span>
-                        <i class="bi bi-envelope"></i> info@example.com
+                        <i class="bi bi-telephone-fill p-2"></i> +966-38428272
+                        <i class="bi bi-envelope me-2"></i> info@modernexpert.sa
+                        <i class="bi bi-geo-alt me-2"></i> الرياض-حي الشفاء
                     </div>
-
                     <div>
-                        <i class="bi bi-facebook mx-1"></i>
-                        <i class="bi bi-twitter mx-1"></i>
-                        <i class="bi bi-linkedin mx-1"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-
-        <!-- ===== NAVBAR ===== -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="#">Modern Expert</a>
-
-                <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item"><a class="nav-link active" href="#">الرئيسية</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">من نحن</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">خدماتنا</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">المدونة</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">تواصل معنا</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <!-- ===== HERO CONTENT ===== -->
-        <div class="hero-content">
-            <div class="container">
-                <h1>شركة خبراء العصر الحديث<br>للاستشارات المالية والمحاسبية</h1>
-                <p class="my-4">
-                    فريق متخصص في تقديم حلول مالية ومحاسبية متكاملة، نعمل وفق أعلى
-                    المعايير المهنية وأفضل الممارسات العالمية.
-                </p>
-
-                <div class="d-flex gap-3">
-                    <a href="#" class="btn btn-main">احجز استشارة</a>
-                    <a href="#" class="btn btn-outline">تواصل معنا</a>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <section class="py-5">
-        <div class="container text-center">
-            <h5 class="fw-bold mb-4">معتمدون لدى</h5>
-
-            <div class="row g-4 justify-content-center">
-                <div class="col-6 col-md-3">
-                    <div class="bg-light rounded" style="height:80px;"></div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="bg-light rounded" style="height:80px;"></div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="bg-light rounded" style="height:80px;"></div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="bg-light rounded" style="height:80px;"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="py-5">
-        <div class="container">
-            <div class="row align-items-center g-5">
-
-                <!-- الصورة -->
-                <div class="col-lg-6 position-relative">
-                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" class="img-fluid rounded-4"
-                        alt="من نحن">
-
-                    <!-- كارد صغير فوق الصورة -->
-                    <div class="about-badge shadow-sm">
-                        <strong>أكثر من 12 سنة خبرة</strong>
-                        <div class="d-flex mt-2">
-                            <img src="https://i.pravatar.cc/30?img=1" class="rounded-circle me-1">
-                            <img src="https://i.pravatar.cc/30?img=2" class="rounded-circle me-1">
-                            <img src="https://i.pravatar.cc/30?img=3" class="rounded-circle">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- النص -->
-                <div class="col-lg-6">
-                    <h6 class="text-primary fw-bold mb-2">من نحن</h6>
-                    <h3 class="fw-bold mb-3">
-                        شركة الاستشارات المالية
-                        <br>
-                        المعتمدة لدى كبرى الجهات
-                    </h3>
-
-                    <p class="text-muted lh-lg">
-                        شركة خبراء العصر الحديث كيان مهني متخصص في تقديم
-                        الاستشارات المالية والمحاسبية، نعمل وفق أفضل
-                        الممارسات المهنية وبما يحقق الاستدامة والنمو
-                        لعملائنا في مختلف القطاعات.
-                    </p>
-
-                    <a href="#" class="btn btn-consult mt-3">
-                        <i class="bi bi-arrow-left"></i>
-                        تعرف على المزيد
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-<section class="stats-section py-5">
-  <div class="container">
-    <div class="row text-center g-4">
-
-      <div class="col-6 col-md-3">
-        <div class="stat-number count-up" data-count="25" data-suffix="+">0</div>
-        <div class="stat-label">الموظفون</div>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <div class="stat-number count-up" data-count="31" data-suffix="+">0</div>
-        <div class="stat-label">الخدمات</div>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <div class="stat-number count-up" data-count="79" data-suffix="+">0</div>
-        <div class="stat-label">العملاء</div>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <div class="stat-number count-up" data-count="68" data-suffix="+">0</div>
-        <div class="stat-label">الاستشارات</div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-    <section class="why-us-section py-5">
-        <div class="container">
-
-            <!-- العنوان -->
-            <div class="text-center text-white mb-5">
-                <h3 class="fw-bold">لماذا تختار خبراء العصر الحديث</h3>
-            </div>
-
-            <!-- الكروت -->
-            <div class="row g-4">
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="why-card h-100">
-                        <div class="icon-box">
-                            <i class="bi bi-lightning-charge"></i>
-                        </div>
-                        <h6 class="fw-bold mt-3">سرعة الإنجاز</h6>
-                        <p>
-                            نلتزم بتقديم الخدمات بسرعة وكفاءة عالية دون المساس بالجودة.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="why-card h-100">
-                        <div class="icon-box">
-                            <i class="bi bi-people"></i>
-                        </div>
-                        <h6 class="fw-bold mt-3">شراكة وتعاون</h6>
-                        <p>
-                            نعمل مع عملائنا كشركاء نجاح لتحقيق أفضل النتائج.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="why-card h-100">
-                        <div class="icon-box">
-                            <i class="bi bi-grid"></i>
-                        </div>
-                        <h6 class="fw-bold mt-3">تنوع الخدمات</h6>
-                        <p>
-                            نقدم باقة متكاملة من الخدمات المالية والمحاسبية.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="why-card h-100">
-                        <div class="icon-box">
-                            <i class="bi bi-award"></i>
-                        </div>
-                        <h6 class="fw-bold mt-3">الجودة المهنية</h6>
-                        <p>
-                            نلتزم بأعلى معايير الجودة والمهنية في جميع أعمالنا.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-    <section class="services-section py-5">
-        <div class="container">
-
-            <!-- العنوان -->
-            <div class="row mb-4 align-items-center">
-                <div class="col-md-6 text-md-end">
-                    <h3 class="fw-bold">
-                        مجموعة من الحلول<br>
-                        والخدمات المميزة نقدمها لكم
-                    </h3>
-                </div>
-                <div class="col-md-6">
-                    <p class="text-muted">
-                        نعمل على تقديم حلول مالية ومحاسبية متكاملة
-                        تلبي احتياجات عملائنا وتحقق لهم أعلى مستويات
-                        الكفاءة والامتثال.
-                    </p>
-                </div>
-            </div>
-
-            <!-- الكروت -->
-            <div class="row g-4">
-
-                <!-- Card -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card h-100">
-                        <img src="assets/img/service1.jpg" class="img-fluid" alt="">
-                        <div class="p-3">
-                            <h6 class="fw-bold">القضايا القانونية</h6>
-                            <p class="text-muted small">
-                                تقديم الاستشارات القانونية والدعم
-                                التنظيمي للشركات.
-                            </p>
-                            <a href="#" class="btn btn-service">تعرف على المزيد</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card h-100">
-                        <img src="assets/img/service2.jpg" class="img-fluid" alt="">
-                        <div class="p-3">
-                            <h6 class="fw-bold">مسك الدفاتر</h6>
-                            <p class="text-muted small">
-                                تسجيل ومعالجة جميع العمليات المالية
-                                بدقة واحترافية.
-                            </p>
-                            <a href="#" class="btn btn-service">تعرف على المزيد</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card h-100">
-                        <img src="assets/img/service3.jpg" class="img-fluid" alt="">
-                        <div class="p-3">
-                            <h6 class="fw-bold">مراجعة وتدقيق القوائم المالية</h6>
-                            <p class="text-muted small">
-                                إعداد ومراجعة القوائم المالية وفق
-                                المعايير المعتمدة.
-                            </p>
-                            <a href="#" class="btn btn-service">تعرف على المزيد</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card h-100">
-                        <img src="assets/img/service4.jpg" class="img-fluid" alt="">
-                        <div class="p-3">
-                            <h6 class="fw-bold">الزكاة والضرائب</h6>
-                            <p class="text-muted small">
-                                إعداد إقرارات الزكاة و VAT
-                                والالتزام الضريبي.
-                            </p>
-                            <a href="#" class="btn btn-service">تعرف على المزيد</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card h-100">
-                        <img src="assets/img/service5.jpg" class="img-fluid" alt="">
-                        <div class="p-3">
-                            <h6 class="fw-bold">المراجعة الداخلية</h6>
-                            <p class="text-muted small">
-                                تحسين كفاءة الأنظمة المالية
-                                وإدارة المخاطر.
-                            </p>
-                            <a href="#" class="btn btn-service">تعرف على المزيد</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card h-100">
-                        <img src="assets/img/service6.jpg" class="img-fluid" alt="">
-                        <div class="p-3">
-                            <h6 class="fw-bold">الاستشارات المالية</h6>
-                            <p class="text-muted small">
-                                تقديم الحلول الاستراتيجية
-                                لدعم القرارات المالية.
-                            </p>
-                            <a href="#" class="btn btn-service">تعرف على المزيد</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section class="contact-section py-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-
-                <!-- معلومات التواصل -->
-                <div class="col-lg-5">
-                    <h3 class="fw-bold text-purple mb-3">تواصل معنا</h3>
-                    <p class="text-muted mb-4">
-                        يسعدنا تواصلك معنا، فريقنا جاهز للإجابة على
-                        استفساراتك وتقديم الاستشارة المناسبة.
-                    </p>
-
-                    <div class="contact-info mb-3">
-                        <i class="bi bi-geo-alt"></i>
-                        <span>الرياض – المملكة العربية السعودية</span>
-                    </div>
-
-                    <div class="contact-info mb-3">
-                        <i class="bi bi-envelope"></i>
-                        <span>info@modernexpert.com</span>
-                    </div>
-
-                    <div class="contact-info mb-3">
-                        <i class="bi bi-telephone"></i>
-                        <span>+966 55 555 5555</span>
-                    </div>
-
-                    <div class="mt-4">
+                        <i class="bi bi-instagram mx-2"></i>
+                        <i class="bi bi-twitter-x mx-2"></i>
                         <i class="bi bi-facebook mx-2"></i>
-                        <i class="bi bi-twitter mx-2"></i>
-                        <i class="bi bi-linkedin mx-2"></i>
                     </div>
                 </div>
+            </div>
 
-                <!-- الفورم -->
-                <div class="col-lg-7">
-                    <div class="contact-form shadow-sm">
-                        <form>
-
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="الاسم الكامل">
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="email" class="form-control" placeholder="البريد الإلكتروني">
-                                </div>
-                            </div>
-
-                            <div class="mt-3">
-                                <input type="text" class="form-control" placeholder="عنوان الرسالة">
-                            </div>
-
-                            <div class="mt-3">
-                                <textarea class="form-control" rows="5" placeholder="نص الرسالة"></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-consult mt-4">
-                                <i class="bi bi-send"></i>
-                                إرسال الرسالة
-                            </button>
-
-                        </form>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bold" href="#">MODERN EXPERT</a>
+                    <button class="navbar-toggler bg-light" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link"
+                                    href="#">الرئيسية</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">من
+                                    نحن</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="#">خدماتنا</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="#">المدونة</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="#">تواصل معنا</a></li>
+                        </ul>
                     </div>
                 </div>
+            </nav>
 
-            </div>
-        </div>
-    </section>
+            <div class="hero-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h1>شركة خبراء العصر الحديث<br>للاستشارات المالية
+                                والمحاسبية</h1>
+                            <p class="fs-5 my-4 opacity-75">
+                                نقدم حلولاً مالية ذكية ومبتكرة تساعد منشأتك على
+                                النمو والاستقرار المالي وفق أعلى المعايير
+                                الدولية.
+                            </p>
+                            <div class="d-flex gap-3 mt-4">
+                                <a href="#" class="btn-outline-custom">تعرف
+                                    علينا</a>
+                                <button class="btn-main">احجز استشارة
+                                    مجانية</button>
 
-
-
-
-    <footer class="footer-section text-white pt-5">
-        <div class="container">
-
-            <div class="row g-4">
-
-                <!-- عن الشركة -->
-                <div class="col-lg-4">
-                    <h5 class="fw-bold mb-3">خبراء العصر الحديث</h5>
-                    <p class="footer-text">
-                        شركة متخصصة في تقديم الاستشارات المالية
-                        والمحاسبية وفق أعلى المعايير المهنية.
-                    </p>
-                </div>
-
-                <!-- روابط سريعة -->
-                <div class="col-lg-2 col-md-4">
-                    <h6 class="fw-bold mb-3">روابط سريعة</h6>
-                    <ul class="list-unstyled footer-links">
-                        <li><a href="#">الرئيسية</a></li>
-                        <li><a href="#">من نحن</a></li>
-                        <li><a href="#">خدماتنا</a></li>
-                        <li><a href="#">تواصل معنا</a></li>
-                    </ul>
-                </div>
-
-                <!-- الخدمات -->
-                <div class="col-lg-3 col-md-4">
-                    <h6 class="fw-bold mb-3">الخدمات</h6>
-                    <ul class="list-unstyled footer-links">
-                        <li><a href="#">الخدمات المحاسبية</a></li>
-                        <li><a href="#">الاستشارات المالية</a></li>
-                        <li><a href="#">المراجعة والتدقيق</a></li>
-                        <li><a href="#">إعداد التقارير</a></li>
-                    </ul>
-                </div>
-
-                <!-- تواصل -->
-                <div class="col-lg-3 col-md-4">
-                    <h6 class="fw-bold mb-3">تواصل معنا</h6>
-                    <p class="footer-text mb-2">
-                        <i class="bi bi-geo-alt"></i>
-                        الرياض – السعودية
-                    </p>
-                    <p class="footer-text mb-2">
-                        <i class="bi bi-envelope"></i>
-                        info@modernexpert.com
-                    </p>
-                    <p class="footer-text">
-                        <i class="bi bi-telephone"></i>
-                        +966 55 555 5555
-                    </p>
-                </div>
-
-            </div>
-
-            <!-- خط فاصل -->
-            <hr class="border-light my-4">
-
-            <!-- الحقوق -->
-            <div class="d-flex justify-content-between flex-wrap">
-                <p class="mb-0">
-                    © 2026 جميع الحقوق محفوظة
-                </p>
-                <div>
-                    <i class="bi bi-facebook mx-2"></i>
-                    <i class="bi bi-twitter mx-2"></i>
-                    <i class="bi bi-linkedin mx-2"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </header>
 
-        </div>
-    </footer>
 
-  <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
 
+
+
+
+
+
+
+
+
+
+        
+        <section class="stats-section py-5">
+            <div class="container-fluid">
+                <div class="row text-center g-4">
+
+                    <div class="col-6 col-md-3">
+                        <div class="stat-number count-up" data-count="25"
+                            data-suffix="+">0</div>
+                        <div class="stat-label">الموظفون</div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="stat-number count-up" data-count="31"
+                            data-suffix="+">0</div>
+                        <div class="stat-label">الخدمات</div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="stat-number count-up" data-count="79"
+                            data-suffix="+">0</div>
+                        <div class="stat-label">العملاء</div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="stat-number count-up" data-count="68"
+                            data-suffix="+">0</div>
+                        <div class="stat-label">الاستشارات</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="why-us-section py-5">
+            <div class="container">
+
+                <!-- العنوان -->
+                <div class="text-center text-white mb-5">
+                    <h3 class="fw-bold">لماذا تختار خبراء العصر الحديث</h3>
+                </div>
+
+                <!-- الكروت -->
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="why-card h-100">
+                            <div class="icon-box">
+                                <i class="bi bi-lightning-charge"></i>
+                            </div>
+                            <h6 class="fw-bold mt-3">سرعة الإنجاز</h6>
+                            <p>
+                                نلتزم بتقديم الخدمات بسرعة وكفاءة عالية دون
+                                المساس بالجودة.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="why-card h-100">
+                            <div class="icon-box">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h6 class="fw-bold mt-3">شراكة وتعاون</h6>
+                            <p>
+                                نعمل مع عملائنا كشركاء نجاح لتحقيق أفضل النتائج.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="why-card h-100">
+                            <div class="icon-box">
+                                <i class="bi bi-grid"></i>
+                            </div>
+                            <h6 class="fw-bold mt-3">تنوع الخدمات</h6>
+                            <p>
+                                نقدم باقة متكاملة من الخدمات المالية والمحاسبية.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="why-card h-100">
+                            <div class="icon-box">
+                                <i class="bi bi-award"></i>
+                            </div>
+                            <h6 class="fw-bold mt-3">الجودة المهنية</h6>
+                            <p>
+                                نلتزم بأعلى معايير الجودة والمهنية في جميع
+                                أعمالنا.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+     
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+        // أنيميشن عداد الأرقام
+        const counters = document.querySelectorAll('.stat-number');
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const speed = 200; 
+                const inc = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + inc);
+                    setTimeout(updateCount, 10);
+                } else {
+                    counter.innerText = target + "+";
+                }
+            };
+            updateCount();
+        });
+    </script>
+    </body>
 </html>

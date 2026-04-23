@@ -1,69 +1,4 @@
 
-body {
-  font-family: "Tajawal", sans-serif;
-}
-
-/* ===== HERO ===== */
-.hero {
-  position: relative;
-  min-height: 100vh;
-  background:
-    linear-gradient(rgba(13,58,94,.85), rgba(13,58,94,.85)),
-    url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d") center/cover;
-  color: #fff;
-}
-
-/* ===== TOP HEADER ===== */
-.top-header {
-  font-size: 14px;
-  padding: 10px 0;
-}
-
-/* ===== NAVBAR ===== */
-.navbar {
-  background: transparent !important;
-}
-
-.navbar .nav-link,
-.navbar-brand {
-  color: #fff !important;
-}
-
-.navbar .nav-link:hover {
-  opacity: .8;
-}
-
-/* ===== HERO CONTENT ===== */
-.hero-content {
-  padding-top: 200px;
-}
-
-.hero h1 {
-  font-size: 42px;
-  font-weight: bold;
-}
-
-.hero p {
-  max-width: 600px;
-  font-size: 17px;
-  line-height: 1.8;
-}
-
-/* ===== BUTTONS ===== */
-.btn-main {
-  background: #6f42c1;
-  color: #fff;
-  border-radius: 30px;
-  padding: 10px 30px;
-}
-
-.btn-outline {
-  border: 1px solid #fff;
-  color: #fff;
-  border-radius: 30px;
-  padding: 10px 30px;
-}
-
 
 
 
@@ -77,8 +12,10 @@ body {
   border-radius: 12px;
   font-size: 14px;
 }
+
 .stats-section {
-  background: #f7f6fb; /* نفس لون Figma */
+  background: #f7f6fb;
+  /* نفس لون Figma */
 }
 
 .stats-number {
@@ -92,6 +29,7 @@ body {
   font-size: 15px;
   margin-top: 5px;
 }
+
 .stat-number {
   font-size: 32px;
   font-weight: 700;
@@ -108,7 +46,8 @@ body {
 
 
 .why-us-section {
-  background: #5b3a8e; /* بنفسجي مطابق */
+  background: #5b3a8e;
+  /* بنفسجي مطابق */
 }
 
 .why-card {
@@ -165,7 +104,7 @@ body {
   border-radius: 16px;
   padding: 30px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .05);
   transition: all .3s ease;
 }
 
@@ -178,7 +117,7 @@ body {
 
 .service-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0,0,0,.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .08);
 }
 
 .service-icon {
@@ -229,37 +168,425 @@ body {
 
 .contact-form .form-control:focus {
   border-color: #6f42c1;
-  box-shadow: 0 0 0 .2rem rgba(111,66,193,.15);
+  box-shadow: 0 0 0 .2rem rgba(111, 66, 193, .15);
 }
 
 
-.footer-section {
+
+
+
+
+
+
+
+
+/* ================= HEADER ================= */
+.top-contact-bar {
   background: #6f42c1;
 }
 
-.footer-text {
-  font-size: 14px;
-  line-height: 1.8;
-  color: #eae3f7;
-}
-
-.footer-links li {
-  margin-bottom: 8px;
-}
-
-.footer-links a {
-  color: #eae3f7;
-  text-decoration: none;
-  font-size: 14px;
-  transition: .3s;
-}
-
-.footer-links a:hover {
+.top-contact-bar .contact-left span,
+.top-contact-bar .social-icons,
+.top-contact-bar .bi {
   color: #fff;
+  font-size: 16px;
 }
 
-.footer-section i {
-  font-size: 18px;
+.navbar-brand {
+  color: #1f2937;
+}
+
+.navbar .nav-link {
+  color: #374151 !important;
+}
+
+.navbar .nav-link.active {
+  color: #6f42c1 !important;
+  font-weight: 600;
+}
+
+/* توسيط اللوجو */
+@media (min-width: 992px) {
+  .navbar .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar .navbar-toggler {
+    position: absolute;
+    right: 1rem;
+  }
+}
+
+
+/* ================= BLOG SECTION ================= */
+
+.title,
+.section-title {
+  color: #2c5f7c;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.section-title {
+  font-size: 28px;
+}
+
+/* الكارد الكبير */
+.big-card img {
+  height: 350px;
+}
+
+/* الكاردات الصغيرة */
+.small-card {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  align-items: flex-start;
+}
+
+.small-card img {
+  width: 130px;
+  height: 95px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.small-text h6 {
+  font-size: 17px;
+  color: #2c5f7c;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.small-text p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.small-text span {
+  font-size: 13px;
+  color: #999;
+}
+
+
+/* ================= POSTS CARDS ================= */
+
+.post-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  transition: 0.3s;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+}
+
+.post-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 10px;
+}
+
+.post-content {
+  text-align: right;
+}
+
+.post-content h6 {
+  color: #2c5f7c;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.post-content p {
+  color: #666;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.post-content span {
+  color: #999;
+  font-size: 12px;
+}
+
+
+/* ================= ICON BOX ================= */
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background: #eaf4f8;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #2c5f7c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .big-card img {
+    height: 240px;
+  }
+
+  .small-card img {
+    width: 100px;
+    height: 75px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-card-bg {
+  background-color: #f2f0f5;
+  border-radius: 12px;
+}
+
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  color: #62508b;
+}
+
+.text-title-custom {
+  color: #2c4a7c;
+  font-size: 1.5rem;
+}
+
+.text-body-custom {
+  color: #444444;
+  line-height: 1.8;
+}
+
+
+/* الألوان والمساحات المخصصة */
+.bg-custom-purple {
+  background-color: #5e35b1;
+}
+
+/* لون الخلفية البنفسجي */
+.icon-box {
+  width: 45px;
+  height: 45px;
+  background-color: #f3f0f7;
+  color: #5e35b1;
+  border-radius: 8px;
+}
+
+.text-value-title {
+  color: #1a427a;
+  font-weight: 800;
+}
+
+.text-value-body {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* تنسيقات الصورة لتكون كبيرة ومتناسقة */
+.img-container img {
+  width: 100%;
+  height: 450px;
+  /* زيادة طول الصورة ليتناسب مع كبر حجمها */
+  object-fit: cover;
+}
+
+/* تنسيق الحاوية الأساسية للخطوة */
+.step-wrapper {
   cursor: pointer;
+  border-right: 5px solid transparent;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
 }
 
+/* الدائرة الرقمية في الحالة العادية */
+.step-num {
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  background-color: #f2f0f5;
+  color: #62508b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border: 1px solid #dee2e6;
+  transition: all 0.3s ease;
+}
+
+/* تلوين العنوان عند الحاجة */
+.step-title {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* تنسيق الصورة وحل مشكلة المسافة الزائدة */
+.method-img {
+  width: 100%;
+  height: 100%;
+  /* تأخذ طول الحاوية الأب */
+  min-height: 320px;
+  /* الحد الأدنى للطول لضمان شكل جمالي */
+  max-height: 380px;
+  /* تقليل الحد الأقصى لمنع الفراغ الأسود الذي ظهر في صورتك */
+  object-fit: cover;
+  display: block;
+}
+
+/* تنسيق الكارد في الحالة العادية (بدون هوفر) */
+.step-card {
+  cursor: pointer;
+  border-right: 5px solid transparent;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+}
+
+/* شكل الدائرة الرقمية */
+.step-num {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  background-color: #f2f0f5;
+  color: #62508b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+/* تنسيق الوصف النصي */
+.step-desc {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+/* تعريف لون النص */
+.text-custom-purple {
+  color: #563589 !important;
+}
+
+/* تعريف لون الخلفية */
+.bg-custom-purple {
+  background-color: #563589 !important;
+  color: white;
+  /* لجعل النص مقروءاً فوق الخلفية الداكنة */
+}
+
+/* تعريف لون الحدود */
+.border-custom-purple {
+  border-color: #563589 !important;
+}
+
+
+
+
+.footer-custom {
+  background-color: #563589;
+}
+
+/* صندوق الشعار */
+.logo-box {
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+}
+
+/* أيقونات السوشيال ميديا */
+.social-icons a {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+
+
+/* محاذاة الأيقونات في الجوال */
+@media (max-width: 991px) {
+  .contact-box div {
+    flex-direction: row-reverse;
+    /* لضمان بقاء الأيقونة بجانب النص في الوسط */
+  }
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.social-icons a:hover {
+  opacity: 1;
+}
+.contact-links p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* يضمن التصاق النص بالأيقونة في اليمين */
+    gap: 10px; /* المسافة بين النص والأيقونة */
+    margin: 0 0 15px 0;
+}
+
+.contact-links i {
+    font-size: 1.1rem;
+    color: #fff;
+}
